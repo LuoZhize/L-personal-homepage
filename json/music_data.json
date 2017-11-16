@@ -1,0 +1,76 @@
+{
+	"music_list":[
+		{
+			"img" : "http://img2.imgtn.bdimg.com/it/u=1425393237,4180121301&fm=27&gp=0.jpg",
+			"name" : "我好想你 - 潘广益",
+			"play" : "http://ar.h5.ri03.sycdn.kuwo.cn/655b18a6ecc2aba0644d3a760ee10621/5a0d2d8b/resource/a2/76/45/3015123168.aac",
+			"order" : ""
+		},
+		{
+			"img" : "http://img1.kuwo.cn/star/albumcover/240/91/92/3628789615.jpg",
+			"name" : "请跟我联络 - 李易峰",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3575600532,2934150817&fm=27&gp=0.jpg",
+			"name" : "别把疼你的人弄丢了 - 雨宗林",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://y3.ifengimg.com/dcc06d419bc1653a/2014/1203/rdn_547e8a557be5e.jpg",
+			"name" : "我们的明天 - 鹿晗",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img14.3lian.com/201512/15/fd7d0a87b7c2d7a483c01470733e0459.jpg",
+			"name" : "会痛的石头 - 萧敬腾",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img3.imgtn.bdimg.com/it/u=1224671943,1351193184&fm=27&gp=0.jpg",
+			"name" : "你到底有没有爱过我 - 蓝波",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img245.ph.126.net/9s1HgsV_HFCgXup-iVPc7g==/1388797535092099485.jpg",
+			"name" : "最幸福的人 - 曾春年",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img2.imgtn.bdimg.com/it/u=2098921092,1960425110&fm=27&gp=0.jpg",
+			"name" : "一百个放心 - 张津涤",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://mu1.sinaimg.cn/square.120/weiyinyue.music.sina.com.cn/wpp_cover/52436210.jpg",
+			"name" : "我说我爱你 - 刘嘉亮",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img0.imgtn.bdimg.com/it/u=2395012278,709073586&fm=27&gp=0.jpg",
+			"name" : "为你执着 - 言承旭",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://img4.imgtn.bdimg.com/it/u=2443601118,4262417786&fm=27&gp=0.jpg",
+			"name" : "依然爱你 - 王力宏",
+			"play" : "",
+			"order" : ""
+		},
+		{
+			"img" : "http://att.0xy.cn/attachment/Mon_0910/20_11674_c84e239020de77c.jpg?83",
+			"name" : "将紫色的梦带走 - 明聪",
+			"play" : "",
+			"order" : ""
+		}
+	]
+}

@@ -1,37 +1,187 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/LuoZhize/L-personal-homepage/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LuoZhize/L-personal-homepage/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="referrer" content="never" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://libs.cdnjs.net/dot/1.1.2/doT.min.js"></script>
+		
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#apply {
+				text-align: center;
+			}
+			
+			#apply>li {
+				font-family: "楷体";
+				margin: 30px;
+				list-style: none;
+				display: inline-block;
+				color: white;
+				font-size: 10px;
+			}
+			
+			#apply>li>img {
+				width: 30%;
+				height: 30%;
+			}
+			
+			#apply>li:hover {
+				color: darkgray;
+				animation: themeScale 300ms linear forwards;
+			}
+			
+			@keyframes themeScale {
+				100%{
+					transform: scale(1.5);
+				}
+			}
+			
+			#list_view {
+				width: 20%;
+				text-align: center;
+				font-family: "楷体";
+				font-size: 23px;
+				color: darkblue;
+				display: inline-block;
+				vertical-align: top;
+			}
+			
+			#list_view>p {
+				padding: 25px;
+			}
+			
+			#list_view>p:hover {
+				animation: listviewScale 300ms forwards;
+			}
+			
+			@keyframes listviewScale {
+				100%{
+					transform: scale(1.1);
+				}
+			}
+			
+			#list_view_data {
+				width: 70%;
+				display: inline-block;
+			}
+			
+			#list_view_data>li {
+				margin-right: 80px;
+				margin-bottom: 80px;
+				text-align: center;
+				width: 16%;
+				list-style: none;
+				display: inline-block;
+				position: relative;
+			}
+			
+			#list_view_data>li>p {
+				margin-top: 20px;
+				position: absolute;	
+			}
+			
+			#list_view_data>li>div>img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#list_view_data>li>div {
+				width: 150px;
+				height: 150px;
+				overflow: hidden;
+				border-radius: 100px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<ul id="apply">
+			<li onclick="music_list_btn()" >
+				<img src="img/music.png" />
+				<p>音乐</p>
+			</li>
+			<li onclick="game_list_btn()">
+				<img src="img/game.png" />
+				<p>游戏</p>
+			</li>
+			<li onclick="movie_list_btn()">
+				<img src="img/movie.png" />
+				<p>电影</p>
+			</li>
+			<li onclick="book_list_btn()">
+				<img src="img/book.jpg" />
+				<p>小说</p>
+			</li>
+		</ul>
+		<div id="list_view"></div>
+		<ul id="list_view_data"></ul>
+	</body>
+	
+	<script id="list_viewT" type="text/template">
+		{{for (var i = 0; i < it.length; i++) { }}
+			<p>{{=it[i].title}}</p>
+		{{ } }}
+	</script>
+	
+	<script id="list_view_dataT" type="text/template">
+		{{for (var i = 0; i < it.length; i++) { }}
+			<li>
+				<div><img src="{{=it[i].img}}" /></div>
+				<p>{{=it[i].name}}</p>
+			</li>
+		{{ } }}
+	</script>
+	
+	<script type="text/javascript">
+		function music_list_btn () {
+			$.get("json/music_list_data.json", function(music_list_data) {
+				var listT = document.getElementById('list_viewT');
+				var templateContent = listT.innerText;
+				var dom = doT.template(templateContent)(music_list_data.music_list);
+				document.getElementById('list_view').innerHTML = dom;
+			});
+			$.get("json/music_data.json", function(music_data) {
+				var listT = document.getElementById('list_view_dataT');
+				var templateContent = listT.innerText;
+				var dom = doT.template(templateContent)(music_data.music_list);
+				document.getElementById('list_view_data').innerHTML = dom;
+				console.log(music_data.music_list);
+			});
+		};
+		
+		function movie_list_btn () {
+			$.get("json/movie_list_data.json", function(movie_list_data) {
+				var listT = document.getElementById('list_viewT');
+				var templateContent = listT.innerText;
+				var dom = doT.template(templateContent)(movie_list_data.movie_list);
+				document.getElementById('list_view').innerHTML = dom;
+			});
+		};
+		
+		function game_list_btn () {
+			$.get("json/game_list_data.json", function(game_list_data) {
+				var listT = document.getElementById('list_viewT');
+				var templateContent = listT.innerText;
+				var dom = doT.template(templateContent)(game_list_data.game_list);
+				document.getElementById('list_view').innerHTML = dom;
+			});
+		};
+		
+		function book_list_btn () {
+			$.get("json/book_list_data.json", function(book_list_data) {
+				var listT = document.getElementById('list_viewT');
+				var templateContent = listT.innerText;
+				var dom = doT.template(templateContent)(book_list_data.book_list);
+				document.getElementById('list_view').innerHTML = dom;
+				console.log(dom);
+			});
+		};
+	</script>
+</html>
