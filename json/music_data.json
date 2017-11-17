@@ -1,76 +1,257 @@
 {
-	"music_list":[
+	"music_list_like":[
 		{
 			"img" : "http://img2.imgtn.bdimg.com/it/u=1425393237,4180121301&fm=27&gp=0.jpg",
 			"name" : "我好想你 - 潘广益",
-			"play" : "http://ar.h5.ri03.sycdn.kuwo.cn/655b18a6ecc2aba0644d3a760ee10621/5a0d2d8b/resource/a2/76/45/3015123168.aac",
-			"order" : ""
+			"play" : "http://win.web.ri03.sycdn.kuwo.cn/68ec2dff3dcaa1e8b1465daaa8876bec/5a0d63c1/resource/a2/76/45/3015123168.aac"
 		},
 		{
 			"img" : "http://img1.kuwo.cn/star/albumcover/240/91/92/3628789615.jpg",
 			"name" : "请跟我联络 - 李易峰",
-			"play" : "",
-			"order" : ""
+			"play" : "http://sc1.111ttt.com/2015/5/11/28/104282035385.mp3"
 		},
 		{
 			"img" : "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3575600532,2934150817&fm=27&gp=0.jpg",
 			"name" : "别把疼你的人弄丢了 - 雨宗林",
-			"play" : "",
-			"order" : ""
+			"play" : "http://sc1.111ttt.com/2016/1/08/21/201212121439.mp3"
 		},
 		{
 			"img" : "http://y3.ifengimg.com/dcc06d419bc1653a/2014/1203/rdn_547e8a557be5e.jpg",
 			"name" : "我们的明天 - 鹿晗",
-			"play" : "",
-			"order" : ""
+			"play" : "http://sc1.111ttt.com/2014/1/12/02/5021339409.mp3"
 		},
 		{
 			"img" : "http://img14.3lian.com/201512/15/fd7d0a87b7c2d7a483c01470733e0459.jpg",
 			"name" : "会痛的石头 - 萧敬腾",
-			"play" : "",
-			"order" : ""
+			"play" : "http://www.170mv.com/kw/other.web.ra01.sycdn.kuwo.cn/resource/n2/128/8/24/3030371782.mp3"
 		},
 		{
 			"img" : "http://img3.imgtn.bdimg.com/it/u=1224671943,1351193184&fm=27&gp=0.jpg",
 			"name" : "你到底有没有爱过我 - 蓝波",
-			"play" : "",
-			"order" : ""
+			"play" : "http://sc1.111ttt.com/2015/1/06/28/99281308180.mp3"
 		},
 		{
-			"img" : "http://img245.ph.126.net/9s1HgsV_HFCgXup-iVPc7g==/1388797535092099485.jpg",
-			"name" : "最幸福的人 - 曾春年",
-			"play" : "",
-			"order" : ""
+			"img" : "http://www.ixueyi.com/GetImges/297001-300000/299983/201609261511371426.png",
+			"name" : "回忆那么伤 - 孙子涵",
+			"play" : "http://sc1.111ttt.com/2016/5/09/20/202201303020.mp3"
 		},
 		{
 			"img" : "http://img2.imgtn.bdimg.com/it/u=2098921092,1960425110&fm=27&gp=0.jpg",
 			"name" : "一百个放心 - 张津涤",
-			"play" : "",
-			"order" : ""
+			"play" : "http://sc1.111ttt.com/2015/1/01/10/94102311310.mp3"
 		},
 		{
-			"img" : "http://mu1.sinaimg.cn/square.120/weiyinyue.music.sina.com.cn/wpp_cover/52436210.jpg",
-			"name" : "我说我爱你 - 刘嘉亮",
-			"play" : "",
-			"order" : ""
+			"img" : "http://img.mp.itc.cn/upload/20160317/175bcb2b5cb846aba6b29184f6e79552.jpg",
+			"name" : "冲动的惩罚 - 刀郎",
+			"play" : "http://www.tingge123.com/mp3/2016-07-05/1467680140.mp3"
 		},
 		{
-			"img" : "http://img0.imgtn.bdimg.com/it/u=2395012278,709073586&fm=27&gp=0.jpg",
-			"name" : "为你执着 - 言承旭",
-			"play" : "",
-			"order" : ""
+			"img" : "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1510883583&di=3fdebfc2475812f38890802875c51e54&src=http://imge.kugou.com/stdmusic/20160907/20160907201027519124.jpg",
+			"name" : "爱上你是一个错 - 孙露",
+			"play" : "http://sc1.111ttt.com/2016/1/06/20/199201436001.mp3"
 		},
 		{
 			"img" : "http://img4.imgtn.bdimg.com/it/u=2443601118,4262417786&fm=27&gp=0.jpg",
 			"name" : "依然爱你 - 王力宏",
-			"play" : "",
-			"order" : ""
+			"play" : "http://www.tingge123.com/mp3/2016-06-06/1465170764.mp3"
 		},
 		{
-			"img" : "http://att.0xy.cn/attachment/Mon_0910/20_11674_c84e239020de77c.jpg?83",
-			"name" : "将紫色的梦带走 - 明聪",
-			"play" : "",
-			"order" : ""
+			"img" : "http://img3.yxlady.com/yl/UploadFiles_5361/20151030/20151030180511908.jpg",
+			"name" : "一次就好 - 杨宗纬",
+			"play" : "http://up.mcyt.net/md5/53/NjY2MDY5MQ_Qq4329912.mp3"
+		}
+	],
+	"music_list_love":[
+		{
+			"img" : "http://pic.baike.soso.com/p/20090108/ext-20090108120000-103455.jpg",
+			"name" : "七滴眼泪 - 姜玉阳",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400002f10ml1SsYgi.m4a?vkey=BF375BC6E49860F6510E86DAFCC9A69D5A471A7F65569BBB76B8E901C3426865488B5CA607B63C71B68235F3E7788903E5B04960F2505C94&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511507564&di=b286c9194c48eb5b92fa85d4d83b61a3&imgtype=jpg&er=1&src=http%3A%2F%2Ff1.diyitui.com%2F14%2F2c%2Fef%2Fd8%2Fec%2F4b%2F56%2F92%2F6b%2Fb2%2Fc5%2F08%2F42%2F86%2F1c%2F4c.jpg",
+			"name" : "突然好想你 - 五月天",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400002M8hNI2QgtRY.m4a?vkey=2AE01E76F00837E6C6CA326377DF241396CECBE082904697C7304D363B3551D5A5E590B86546E111ECB6ED3D22B7E31DF99A433FD5774B09&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510914315923&di=d9ca5f1cf284806ebb25bc8034699026&imgtype=0&src=http%3A%2F%2Fp4.qhimg.com%2Ft015f6568f2b5267b01.jpg",
+			"name" : "燃点 - 夏天Alex",
+			"play" : "http://dl.stream.qqmusic.qq.com/C4000017b8Q500cyL4.m4a?vkey=BCE56E58C3B94AEAC71EA78335ABEB5BF6A895011B25764A5BF57B4851EC5CA812F61C902D223F7C9D419B1D6C0D462F9F5E979DA06B4074&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510913063282&di=c8fff68b8c0b5a555264616982cee65d&imgtype=0&src=http%3A%2F%2Fimg3.yxlady.com%2Fyl%2FUploadFiles_5361%2F20150728%2F20150728104404363.jpg",
+			"name" : "伤心的泪 - 夏婉安",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400003a3VHj3aHprh.m4a?vkey=DD0F3944A299F1EA53043C9C6B2681CDA695F20BD1A4B6AA5C99864CA35A01524402360B46FF3611F75E79AA1085ADDB512ED84BDCED9035&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2070418989,1157047107&fm=27&gp=0.jpg",
+			"name" : "一个人 - 夏婉安",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400001g7xQV0FYa7D.m4a?vkey=B65D3B817677C597BA3648E5B3210377A828B0AE8D7EABCA8DF3EF20A40E78EDEF7028189F98D73F4B799FC337D414DAD53C2A04E739BC96&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4088755161,1860893161&fm=27&gp=0.jpg",
+			"name" : "总是那么傻 - 孙子涵",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000A1GGt2knZb3.m4a?vkey=59A32CA1CF61862502FBCBCC644671694C18C167671F380319462E780C2AEACD22E151321C76B442843E658E6B3D31DC7E7321B4423AAD4B&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510913379758&di=b2130671ad44a5c28d070fe429e57b9f&imgtype=0&src=http%3A%2F%2Fimg.9ku.com%2Fpic%2Fzjpic%2F15%2F145175.jpg",
+			"name" : "亲爱的不能到最后 - 单色凌",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400002mwcdK1TRqYV.m4a?vkey=C37EE4012F4C7447DE9A30510ECA254C7551DDE8936DC1FC5343DEFAB534888BC0A9458BE2E3E01C11A13B651F27C3835B0C0CCA1C22ED5F&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510913613998&di=6409fd4167278f02fad8c49f382a83c8&imgtype=0&src=http%3A%2F%2Fwww.ktvkg.com%2Fuploadfiles%2Fmusic%2Ffree%2520pary%252Ffree%2520pary-%25E6%258B%25A5%25E6%258A%25B1%25E7%259D%2580%25E4%25BD%25A0%25E7%259A%2584%25E6%25BB%258B%25E5%2591%25B3.jpg",
+			"name" : "拥抱着你的滋味 - 自由派对",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400003LzdEQ1rhGVY.m4a?vkey=D7AFEB7B38859504DC2713D5003CAEAD6DA51B87CE2248EE7EE60B61671E49D1D0F6E1B2F42BA0D173CB0A8A8EF409365347AB4B8B6CDCA8&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510914660464&di=cc40b761cbe3b6be347965c6e4116b3e&imgtype=0&src=http%3A%2F%2Fp.yjbys.com%2Fimage%2F20170327%2F1490589243128540.jpg",
+			"name" : "不再联系 - 夏天Alex",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000xM8bN4OGgoo.m4a?vkey=516056AE3AC860BFDEE50C060252B0FF53A81E033857BCF2EC84718DA97DCEF6C6345358765BA7C9673CBB96785E19B588106BFBC2339C41&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511508553&di=c3ab1490d464b3a3895b851f9daed623&imgtype=jpg&er=1&src=http%3A%2F%2Fi5.qhimg.com%2Ft015b622d836f1118ad.jpg",
+			"name" : "只想爱你 - 伍华",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400002AMpSP2uoetP.m4a?vkey=8BF02CB7B4BD6CEBA906187322A4745C39345E5C6B54CBB9F40D1EBE5DA9A1E6BDB6A5C3151FE76C95725066592AB6DB06096A0F5FCBF822&guid=6323177538&uin=0&fromtag=66"
+		}
+	],
+	"music_list_LZ":[
+		{
+			"img" : "http://img.qy6.com/bus/2011/0120/2740272.jpg",
+			"name" : "如果没有他你还爱我吗",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000H9g1q1Xyxh0.m4a?vkey=A626D478F66C507DA7C6FEB883208A719F89BEC752D54149C1753BE36DB26102536DF32BDF2A3ECC243F356D583348BBEFC2ED079B58A6E9&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img3.yxlady.com/yl/UploadFiles_5361/20151113/20151113204534168.jpg",
+			"name" : "我好喜欢你",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000wYRrK4BAeR3.m4a?vkey=D2049CFD232CEB51188AFEC6A21E7CF1F38259523D69525436EC48E31FBB5337CBFE5BF01ABB0CD983936DD883E3CC749B7CEF72832E7345&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img0.pclady.com.cn/pclady/star/entertainment/music/1406/1.jpg",
+			"name" : "谁会记得",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000jrnwX2d54F7.m4a?vkey=FD468D0BCE251DCAE9D4F4DE2A77038721BFC0090F79826F8DE04B71647F0EF3E6AF025F54861227D6E7CD771B828251CE93D2B0C240B651&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img.5nd.com/Photo/singer/2/14756.jpg",
+			"name" : "朋友名义",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400004Xcfbz2tNqPh.m4a?vkey=6743F65A23E728FFDAA0927ED76E167C71DDC9EFF060366C155272021D2B19AFE9F99DAFC11FCAD2A320C8622B8220ABFF9206DAC9D5F0DC&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img002.21cnimg.com/photos/album/20140711/m320/E5CEEC657006E682FD25A08E03C37457.jpeg",
+			"name" : "给我个理由",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400003Onl530a9f2Y.m4a?vkey=F89CE2C5DB27EDB190366B4EFD570601597528BED6ADDF1A64DD2E66B7F04C113A231D009D47AC198E26E5079D0235BE5BD0911CE31FB09A&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://img.ys137.com/uploads/cj_img/20160315/03153qdv4tddp3o.jpg",
+			"name" : "一生逍遥",
+			"play" : "http://dl.stream.qqmusic.qq.com/C4000032Aa082xM7D8.m4a?vkey=29DDED057C3AED09F70BD3A33B200DEDC19FA22B20376AAE2D14F7E4941A948E11E345866E98FBD2C3C15F25E1E99B65E7EC513225CADC46&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img4.imgtn.bdimg.com/it/u=721639877,4194080589&fm=27&gp=0.jpg",
+			"name" : "不苦的爱情",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400003vhVHG2GsS99.m4a?vkey=B989E07FCC7665D2421F24432082A26CB8163E2224ECC2B920D573511E8096BEC4B5463B19018FC76E501FFF00CA3A0956EA15B269B30DE7&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "http://img.9ku.com/pic/zjpic/5/47695.jpg",
+			"name" : "被伤过的心还可以爱谁",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400003A8q4L3t2nCA.m4a?vkey=C0F08106C50C4DACA5508C855E2083E120A1C58CD2465BEA89B713B14522CEDE1E8431BD87512C8A2A2AF59C3EE9BBD4728409316105F97B&guid=6323177538&uin=0&fromtag=66"
+		},
+		{
+			"img" : "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1510914555475&di=1bc25a6ebf8f85856a465a56e9db4129&imgtype=0&src=http%3A%2F%2Fimg3.yxlady.com%2Fyl%2FUploadFiles_5361%2F20160118%2F20160118083033248.jpg",
+			"name" : "爱情好无奈",
+			"play" : "http://dl.stream.qqmusic.qq.com/C400000cElg947pMLB.m4a?vkey=809DB99469BF05BFF62D50A3EC1F8EEA97B5739A7E531D18F1A53CDCE04F9228A18D56A71A8C7895A3C5ABD86B55955C6C799599B667B4E4&guid=6323177538&uin=0&fromtag=66"
+		}
+	],
+	"music_list_BX":[
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : " - ",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		}
+	],
+	"music_list_GJ":[
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : " - ",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
+		},
+		{
+			"img" : "",
+			"name" : "",
+			"play" : ""
 		}
 	]
 }

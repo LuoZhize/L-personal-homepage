@@ -122,37 +122,82 @@
 		</ul>
 		<div id="list_view"></div>
 		<ul id="list_view_data"></ul>
+		<div id="musicPlay"></div>
 	</body>
 	
 	<script id="list_viewT" type="text/template">
 		{{for (var i = 0; i < it.length; i++) { }}
-			<p>{{=it[i].title}}</p>
+			<p id="{{=it[i].type}}">{{=it[i].title}}</p>
 		{{ } }}
 	</script>
 	
 	<script id="list_view_dataT" type="text/template">
 		{{for (var i = 0; i < it.length; i++) { }}
 			<li>
-				<div><img src="{{=it[i].img}}" /></div>
+				<div><img id= "{{=it[i].play}}" src="{{=it[i].img}}" /></div>
 				<p>{{=it[i].name}}</p>
 			</li>
 		{{ } }}
 	</script>
 	
 	<script type="text/javascript">
+		var listJson = "json/music_list_data.json";
+		var listDataJson = "json/music_data.json";
 		function music_list_btn () {
-			$.get("json/music_list_data.json", function(music_list_data) {
+			$.get(listJson, function(music_list_data) {
 				var listT = document.getElementById('list_viewT');
 				var templateContent = listT.innerText;
 				var dom = doT.template(templateContent)(music_list_data.music_list);
 				document.getElementById('list_view').innerHTML = dom;
-			});
-			$.get("json/music_data.json", function(music_data) {
-				var listT = document.getElementById('list_view_dataT');
-				var templateContent = listT.innerText;
-				var dom = doT.template(templateContent)(music_data.music_list);
-				document.getElementById('list_view_data').innerHTML = dom;
-				console.log(music_data.music_list);
+				document.getElementById('list_view').addEventListener('click',function (e) {
+					var e = e.target;
+					switch (e.id){
+						case "1":
+							$.get(listDataJson, function(music_data) {
+								var listT = document.getElementById('list_view_dataT');
+								var templateContent = listT.innerText;
+								var dom = doT.template(templateContent)(music_data.music_list_like);
+								document.getElementById('list_view_data').innerHTML = dom;
+							});
+							break;
+							case "2":
+							$.get(listDataJson, function(music_data) {
+								var listT = document.getElementById('list_view_dataT');
+								var templateContent = listT.innerText;
+								var dom = doT.template(templateContent)(music_data.music_list_love);
+								document.getElementById('list_view_data').innerHTML = dom;
+							});
+							break;
+						case "3":
+							$.get(listDataJson, function(music_data) {
+								var listT = document.getElementById('list_view_dataT');
+								var templateContent = listT.innerText;
+								var dom = doT.template(templateContent)(music_data.music_list_LZ);
+								document.getElementById('list_view_data').innerHTML = dom;
+							});
+							break;
+						case "4":
+							$.get(listDataJson, function(music_data) {
+								var listT = document.getElementById('list_view_dataT');
+								var templateContent = listT.innerText;
+								var dom = doT.template(templateContent)(music_data.music_list_BX);
+								document.getElementById('list_view_data').innerHTML = dom;
+							});
+							break;
+						case "5":
+							$.get(listDataJson, function(music_data) {
+								var listT = document.getElementById('list_view_dataT');
+								var templateContent = listT.innerText;
+								var dom = doT.template(templateContent)(music_data.music_list_GJ);
+								document.getElementById('list_view_data').innerHTML = dom;
+							});
+							break;
+					}
+					document.getElementById('list_view_data').addEventListener('click',function (e) {
+						var e = e.target;
+						document.getElementById('musicPlay').innerHTML = '<audio src="'+e.id+'" autoplay="autoplay" loop = "loop"></audio>';
+					})
+				})
 			});
 		};
 		
