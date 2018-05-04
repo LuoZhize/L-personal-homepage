@@ -1,4 +1,5 @@
 //music
+document.write();
 var jsonURL = 'http://tingapi.ting.baidu.com/v1/restserver/ting';
 var song = new Object();
 var songPlayList = [];
