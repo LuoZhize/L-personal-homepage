@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+			<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/phone.css" /><!--phone style-->
+		<script>//Dynamically set the viewport.
+			isMobile();
+			function isMobile(){
+			    var ua = navigator.userAgent.toLowerCase();
+			    var StringPhoneReg = "\\b(ip(hone|od)|android|opera m(ob|in)i"
+			        + "|windows (phone|ce)|blackberry"
+			        + "|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp"
+			        + "|laystation portable)|nokia|fennec|htc[-_]"
+			        + "|mobile|up.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\\b";
+			    var StringTableReg = "\\b(ipad|tablet|(Nexus 7)|up.browser"
+			        + "|[1-4][0-9]{2}x[1-4][0-9]{2})\\b";
+			    var isIphone = ua.match(StringPhoneReg),
+			    isTable = ua.match(StringTableReg),
+			    isMobile = isIphone || isTable;
+			    if(isMobile) {
+			    	window.navigator.href = "phone.html";
+			    }else {
+			    	window.location.href = "index.html";
+			    }
+			}
+			var pixelRatio = 1/window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+',user-scalable=yes" />');
+			setSize();
+			window.addEventListener("resize",setSize,false);
+			function setSize() {
+				var html = document.getElementsByTagName('html')[0];
+				var pagcWidth = html.getBoundingClientRect().width;//Get screen width||height
+				var pagcHeight = html.getBoundingClientRect().height;
+				//fiducial value
+				html.style.fontSize = pagcWidth / 30 + 'px';
+			};
+		</script>
+	</head>
+	<body>
+		<!--主页-->
+		<div id="container">
+			<div id="homePage">
+				<div id="autocarouselContainer">
+					<ul id="autocarousel">
+						<li id="particulars">
+							<a></a>
+							<div id="personInfo">
+								<p id="name"><span><i>M</i>&nbsp;</span><span><i>r</i>&nbsp;</span><span>&nbsp;L&nbsp;</span><span>&nbsp;u</span><span>&nbsp;o</span></p>
+								<div id="hint">
+									<p>hope you enjoy yourself here!</p>
+									<p>希望你喜欢这里!</p>
+								</div>
+							</div>
+						</li><li id="interest">
+							<a></a>
+							<div id="interestInfo">
+								<p><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span></p>
+							</div>
+						</li><li id="evaluate">
+							<a></a>
+							<div id="evaluateInfo">
+								<p><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span><span>我爱听音乐我爱听音乐我爱听音乐</span></p>
+							</div>
+						</li>
+					</ul>
+					<ul id="circler">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<nav id="navbar">
+				
+			</nav>
+		</div>
+	</body>
+	<script type="application/javascript" src="js/jquery-1.8.3.min.js"></script><!--导入jquery库-->
+	<script type="text/javascript" src="js/stylemodel.js" ></script><!--Invokes the style that is written.-->
+	<script type="text/javascript" src="js/phone.js"></script><!--pageJs-->
+</html>
+

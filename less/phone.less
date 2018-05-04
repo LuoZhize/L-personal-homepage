@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@rem: 40rem;
+.temLaW(@width,@height){
+    width: @width;
+    height: @height;
+}
+.temPosition(@position,@top,@right,@bottom,@left){
+    position: @position;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+#container {
+    #homePage {
+        .temLaW(100%,100%);
+        font-size: @rem/25;
+        color: beige;
+        #autocarouselContainer {
+            .temLaW(100%,@rem*1.07);
+            //导航轮播图
+            #autocarousel {
+                li {
+                    a {
+                        display: none;
+                    }
+                    div {
+                        margin: 28% auto;
+                        float: none;
+                        font-size: @rem/30;
+                    }
+                }
+                #particulars {
+                    background: url(../img/homepagebg0.jpg) no-repeat;
+                    background-position: 30%;
+                    background-size: 500%;
+                    #personInfo {
+                        font-size: @rem/25;
+                        #name {
+                            .temLaW(@rem/7,@rem/25);
+                           .temPosition(relative,0,0,0,@rem/1.7);
+                            span {
+                                .temPosition(relative,0,0,0,0);
+                            }
+                        }
+                        div {
+                            p {
+                                margin: 5% auto;
+                            }
+                            p:nth-of-type(2) {
+                                margin-left: @rem/9;
+                            }
+                        }
+                    }
+                }
+                #interest {
+                    background: url(../img/homepagebg1.jpg) no-repeat;
+                    background-position: 65%;
+                    background-size: 300%;
+                    div {
+                        .temLaW(@rem/2.2,@rem/5);
+                        .temPosition(relative,0,0,0,-@rem);
+                        margin: 15% auto;
+                        opacity: 0;
+                    }
+                }
+                #evaluate {
+                    background: url(../img/homepagebg2.jpg) no-repeat;
+                    background-position: 80%;
+                    background-size: 300%;
+                    div {
+                        .temLaW(@rem/2.2,@rem/5);
+                        .temPosition(relative,0,0,0,-@rem);
+                        margin: 15% auto;
+                        opacity: 0;
+                    }
+                }
+            }
+            #circler {
+                position: absolute;
+                top: 90%;
+                left: 30%;
+            }
+        }
+    }
+}

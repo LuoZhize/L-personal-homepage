@@ -1,232 +1,356 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-		<script src="http://libs.cdnjs.net/dot/1.1.2/doT.min.js"></script>
 		<meta charset="utf-8" />
+		<meta name="referrer" content="never"/>
 		<title></title>
-		<meta name="referrer" content="never" />
-		
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript">//matching Device 
+			isMobile();
+			function isMobile(){
+			    var ua = navigator.userAgent.toLowerCase();
+			    var StringPhoneReg = "\\b(ip(hone|od)|android|opera m(ob|in)i"
+			        + "|windows (phone|ce)|blackberry"
+			        + "|s(ymbian|eries60|amsung)|p(laybook|alm|rofile/midp"
+			        + "|laystation portable)|nokia|fennec|htc[-_]"
+			        + "|mobile|up.browser|[1-4][0-9]{2}x[1-4][0-9]{2})\\b";
+			    var StringTableReg = "\\b(ipad|tablet|(Nexus 7)|up.browser"
+			        + "|[1-4][0-9]{2}x[1-4][0-9]{2})\\b";
+			    var isIphone = ua.match(StringPhoneReg),
+			    isTable = ua.match(StringTableReg),
+			    isMobile = isIphone || isTable;
+			    if(isMobile) {
+			    	window.location.href = "phone.html";
+			    }else {
+			    	window.navigator.href = "index.html";
+			    }
 			}
-			
-			#apply {
-				text-align: center;
-			}
-			
-			#apply>li {
-				font-family: "楷体";
-				margin: 30px;
-				list-style: none;
-				display: inline-block;
-				color: white;
-				font-size: 10px;
-			}
-			
-			#apply>li>img {
-				width: 30%;
-				height: 30%;
-			}
-			
-			#apply>li:hover {
-				color: darkgray;
-				animation: themeScale 300ms linear forwards;
-			}
-			
-			@keyframes themeScale {
-				100%{
-					transform: scale(1.5);
-				}
-			}
-			
-			#list_view {
-				width: 20%;
-				text-align: center;
-				font-family: "楷体";
-				font-size: 23px;
-				color: darkblue;
-				display: inline-block;
-				vertical-align: top;
-			}
-			
-			#list_view>p {
-				padding: 25px;
-			}
-			
-			#list_view>p:hover {
-				animation: listviewScale 300ms forwards;
-			}
-			
-			@keyframes listviewScale {
-				100%{
-					transform: scale(1.1);
-				}
-			}
-			
-			#list_view_data {
-				width: 70%;
-				display: inline-block;
-			}
-			
-			#list_view_data>li {
-				margin-right: 80px;
-				margin-bottom: 80px;
-				text-align: center;
-				width: 16%;
-				list-style: none;
-				display: inline-block;
-				position: relative;
-			}
-			
-			#list_view_data>li>p {
-				margin-top: 20px;
-				position: absolute;	
-			}
-			
-			#list_view_data>li>div>img {
-				width: 100%;
-				height: 100%;
-			}
-			
-			#list_view_data>li>div {
-				width: 150px;
-				height: 150px;
-				overflow: hidden;
-				border-radius: 100px;
-			}
-			
-		</style>
+			var pixelRatio = 1/window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+',user-scalable=yes" />');
+			setSize();
+			window.addEventListener("resize",setSize,false);
+			function setSize() {
+				var html = document.getElementsByTagName('html')[0];
+				var pagcWidth = html.getBoundingClientRect().width;//Get screen width||height
+				var pagcHeight = html.getBoundingClientRect().height;
+				//fiducial value
+				html.style.fontSize = pagcWidth / 70 + 'px';
+			};
+		</script>
+		<!--stay:停留/screen:屏幕/matching:匹配/Device:设备/finger:手指/to press:点击/Corresponding:相应的/
+			drag:拖/drop:放/except:除了/distance:距离/Invokes:调用/written:写/circulation:循环/recursion:递归/
+			switch:切换/slideshow:轮播图/put together:放在一起/-->
 	</head>
-	
 	<body>
-		<ul id="apply">
-			<li onclick="music_list_btn()" >
-				<img src="img/music.png" />
-				<p>音乐</p>
-			</li>
-			<li onclick="game_list_btn()">
-				<img src="img/game.png" />
-				<p>游戏</p>
-			</li>
-			<li onclick="movie_list_btn()">
-				<img src="img/movie.png" />
-				<p>电影</p>
-			</li>
-			<li onclick="book_list_btn()">
-				<img src="img/book.jpg" />
-				<p>小说</p>
-			</li>
-		</ul>
-		<div id="list_view"></div>
-		<ul id="list_view_data"></ul>
-		<div id="musicPlay"></div>
+		<!--主页-->
+		<div id="container">
+			<div id="homePage">
+				<div id="autocarouselContainer">
+					<ul id="autocarousel">
+						<li id="particulars">
+							<a></a>
+							<div id="personInfo">
+								<p id="name"><span><i>M</i>
+								</span><span><i>r</i>
+								</span><span>&nbsp;L
+								</span><span>&nbsp;u
+								</span><span>&nbsp;o
+								</span></p>
+								<div id="hint">
+									<p>hope you enjoy yourself here!</p>
+									<p>希望你喜欢这里!</p>
+								</div>
+							</div>
+						</li><li id="interest">
+							<a></a>
+							<div id="interestInfo">
+								<p><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span></p>
+							</div>
+						</li><li id="evaluate">
+							<a></a>
+							<div id="evaluateInfo">
+								<p><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span><span>我爱听音乐我爱听音乐我爱听音乐
+								</span></p>
+							</div>
+						</li>
+					</ul>
+					<ul id="circler">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="homepageMain">
+					<div id="product">
+						<a></a>
+						<div>
+							<p>介绍</p>
+							<span>受得了寂寞，</span>
+							<span>守得住繁华，</span>
+						</div>
+						<div>
+							<p>自己</p>
+							<span>经得起诱惑；</span>
+							<span>过得起平淡。</span>
+						</div>
+					</div>
+					<div id="music">
+						<a></a>
+						<div>
+							<p>音的</p>
+							<span>音乐是灵魂</span>
+							<span>让人陶醉在优美的音乐</span>
+						</div>
+						<div>
+							<p>世界</p>
+							<span>的完美表现</span>
+							<span>旋律里而“沉醉不知归路”</span>
+						</div>
+					</div>
+					<div id="movie">
+						<a></a>
+						<div>
+							<p>影的</p>
+							<span>剧情的开始，</span>
+							<span>故事的发展，交织成一席爱怨；</span>
+						</div>
+						<div>
+							<p>天堂</p>
+							<span>满载着一生告白;</span>
+							<span>电影的结局，散落了一地独白。</span>
+						</div>
+					</div>
+					<div id="live">
+						<a></a>
+						<div>
+							<p>放空</p>
+							<span>几分淡泊，清风细雨；</span>
+							<span>不刻意，不虚伪；</span>
+						</div>
+						<div>
+							<p>自己</p>
+							<span>几分从容，俯仰之间；</span>
+							<span>尽自然，尽能力</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container" id="musicPage">
+				<div id="player"></div>
+				<nav class="navbar navbar-default text-center row-lg-2" role="navigation">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">音的世界</a>
+					</div>
+					<div class="navbar-form navbar-right">
+						<div class="form-group">
+							<input value="" id="musicValue" type="text" class="form-control" placeholder="请输入歌曲名">
+						</div>
+				    	<button id="searchBtn" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="searchMusic()"></span>搜索</button>
+					</div>
+			    	<div id="searchList"></div>
+				    <div class="container-fluid">
+					    <div class="navbar-header col-lg-2">
+					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					        </button>
+					    </div>
+					    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+					        <ul class="nav navbar-nav col-lg-7" id="navBand">
+					            <li class="active col-lg-3"><a id="1" href="#">新歌榜</a></li>
+					            <li><a id="2" href="#">热歌榜</a></li>
+					            <li><a id="16" href="#">流行</a></li>
+					            <li><a id="22" href="#">经典老歌榜</a></li>
+					            <li><a id="23" href="#">情歌对唱榜</a></li>
+					            <li><a id="-2" href="#">播放历史</a></li>
+					        </ul>
+					    </div>
+				    </div>
+				</nav>
+				<!--slideShow-->
+				<div id="automatic">
+				    <a class="prev btn btn-default" href="#">
+				        <span class="glyphicon glyphicon-chevron-left"></span>
+				    </a>
+				    <a class="next btn btn-default" href="#">
+				    	<span class="glyphicon glyphicon-chevron-right"></span>
+				    </a>
+				    <ul>
+				       	<li class="pos_0"><a href=""><img src="img/musicnav0.png" width="100" alt=""  /></a></li>
+				        <li class="pos_1"><a href=""><img src="img/musicnav1.png" width="250" alt=""  /></a></li>
+				        <li class="pos_2"><a href=""><img src="img/musicnav2.png" width="470" alt=""  /></a></li>
+				        <li class="pos_3"><a href=""><img src="img/musicnav3.png" width="600" alt=""  /></a></li>
+				        <li class="pos_4"><a href=""><img src="img/musicnav4.png" width="470" alt=""  /></a></li>
+				        <li class="pos_5"><a href=""><img src="img/musicnav5.png" width="250" alt=""  /></a></li>
+				        <li class="pos_6"><a href=""><img src="img/musicnav4.png" width="250" alt=""  /></a></li>
+				    </ul>
+				</div>
+				<div class="row">
+					<!--music List-->
+					<div id="list" class="col-lg-11 song-list-box"></div>
+				</div>
+				<div id="navBottom" class="col-xs-12">
+					<img src="img/music.png" />
+					<span>歌曲名 </span>
+					<span >作者</span>
+					<p>暂无歌曲信息</p>
+				</div>
+				<div id="wallLrc">
+					<div id="lrc"></div>
+				</div>
+			</div>
+			<div class="container" id="moviePage">
+				<div id="playmovie"></div>
+				<div id="movieInfo"></div>
+				<nav class="navbar navbar-default text-center row-lg-2" role="navigation">
+					<div class="navbar-header col-lg-2">
+						<a class="navbar-brand" href="#">影的天堂</a>
+					</div>
+					<div class="navbar-form navbar-right">
+						<div class="form-group">
+							<input id="movieValue" type="text" class="form-control" placeholder="请输入电影名">
+						</div>
+				    	<button id="searchMovie" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick=""></span>搜索</button>
+					</div>
+				    <div class="container-fluid">
+					    <div class="navbar-header col-lg-2">
+					        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-movie">
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					        </button>
+					    </div>
+					    <div class="collapse navbar-collapse" id="example-navbar-movie">
+					        <ul class="nav navbar-nav col-lg-7" id="movieNav">
+					            <li id="in_theaters" class="active col-lg-3"><a href="#">正在上映</a></li>
+					            <li id="coming_soon"><a href="#">即将上映</a></li>
+					            <li id="top250"><a href="#">Top250</a></li>
+					            <li id="us_box"><a href="#">北美票房榜</a></li>
+					            <li id="new_movies"><a href="#">新片榜</a></li>
+					        </ul>
+					    </div>
+					</div>
+				</nav>
+				<div id="myCarousel" class="carousel slide">
+					<!-- carousel-->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/movieNav1.png">
+							<div class="carousel-caption">标题 1</div>
+						</div>
+						<div class="item">
+							<img src="img/movieNav2.png">
+							<div class="carousel-caption">标题 2</div>
+						</div>
+						<div class="item">
+							<img src="img/movieNav3.png">
+							<div class="carousel-caption">标题 3</div>
+						</div>
+					</div>
+					<!-- carouselNav -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+				</div>
+				<div class="row">
+					<!--movieList-->
+					<div id="movieList" class="col-lg-10"></div>
+				</div>
+			</div>
+			<div id="livePage"></div>
+			<div id="nav">
+				<nav id="navbar">
+					<a id="nav_pep"></a>
+					<a id="nav_music"></a>
+					<p id="nav_ball"></p>
+					<a id="nav_movie"></a>
+					<a id="nav_live"></a>
+				</nav>
+			</div>
+		</div>
 	</body>
-	
-	<script id="list_viewT" type="text/template">
-		{{for (var i = 0; i < it.length; i++) { }}
-			<p id="{{=it[i].type}}">{{=it[i].title}}</p>
+	<script type="text/javascript" src="js/stylemodel.js" ></script><!--Invokes the style that is written.-->
+	<script type="text/javascript" src="js/index.js" ></script><!--pageJs-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script><!--导入jquery库-->
+	<!--引用doT模板引擎-->
+	<script src="http://libs.cdnjs.net/dot/1.1.2/doT.min.js"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script><!--导入bootstrap库-->
+	<!--ListTemplate-->
+	<script id="listT" type="text/template">
+		{{ for(var i = 0; i < it.length; i++){ }}
+		<div class="col-xs-2" onclick="playSong({{=it[i].song_id}})">
+	    	<div class="thumbnail">
+	      		<img src="{{=it[i].pic_big}}">
+	      		<div class="caption">
+	        		<h5 class="ellipsis"><abbr title="{{=it[i].title}}">{{=it[i].title}}</abbr></h5>
+	        		<p class="ellipsis"><abbr title="{{=it[i].author}}">{{=it[i].author}}</abbr></p>
+	      		</div>
+	    	</div>
+	  	</div>
 		{{ } }}
 	</script>
-	
-	<script id="list_view_dataT" type="text/template">
-		{{for (var i = 0; i < it.length; i++) { }}
-			<li>
-				<div><img id= "{{=it[i].play}}" src="{{=it[i].img}}" /></div>
-				<p>{{=it[i].name}}</p>
-			</li>
-		{{ } }}
+	<!--playListTemplate-->
+	<script id="playListT" type="text/template">
+		<ul id="playListBox" class="list-group media-list">
+			{{ if(it.length == 0){ }}
+				<p>播放列表没有内容。</p>
+			{{ }else{ }}
+				{{ for(var i = it.length-1; i >= 0; i--){ }}
+			  	<li id="{{=it[i].songinfo.song_id}}" class="list-group-item media">
+				  	<div class="media-left media-middle">
+				      	<img class="media-object" src="{{=it[i].songinfo.pic_small}}" alt="...">
+				    </div>
+				    <div class="media-body">
+				     	<h4 class="media-heading">{{=it[i].songinfo.title}}</h4>
+				     	<p>{{=it[i].songinfo.author}}</p>
+				    </div>
+			  	</li>
+			  	{{ } }}
+		  	{{ } }}
+		</ul>
 	</script>
-	
-	<script type="text/javascript">
-		var listJson = "json/music_list_data.json";
-		var listDataJson = "json/music_data.json";
-		function music_list_btn () {
-			$.get(listJson, function(music_list_data) {
-				var listT = document.getElementById('list_viewT');
-				var templateContent = listT.innerText;
-				var dom = doT.template(templateContent)(music_list_data.music_list);
-				document.getElementById('list_view').innerHTML = dom;
-				document.getElementById('list_view').addEventListener('click',function (e) {
-					var e = e.target;
-					switch (e.id){
-						case "1":
-							$.get(listDataJson, function(music_data) {
-								var listT = document.getElementById('list_view_dataT');
-								var templateContent = listT.innerText;
-								var dom = doT.template(templateContent)(music_data.music_list_like);
-								document.getElementById('list_view_data').innerHTML = dom;
-							});
-							break;
-							case "2":
-							$.get(listDataJson, function(music_data) {
-								var listT = document.getElementById('list_view_dataT');
-								var templateContent = listT.innerText;
-								var dom = doT.template(templateContent)(music_data.music_list_love);
-								document.getElementById('list_view_data').innerHTML = dom;
-							});
-							break;
-						case "3":
-							$.get(listDataJson, function(music_data) {
-								var listT = document.getElementById('list_view_dataT');
-								var templateContent = listT.innerText;
-								var dom = doT.template(templateContent)(music_data.music_list_LZ);
-								document.getElementById('list_view_data').innerHTML = dom;
-							});
-							break;
-						case "4":
-							$.get(listDataJson, function(music_data) {
-								var listT = document.getElementById('list_view_dataT');
-								var templateContent = listT.innerText;
-								var dom = doT.template(templateContent)(music_data.music_list_BX);
-								document.getElementById('list_view_data').innerHTML = dom;
-							});
-							break;
-						case "5":
-							$.get(listDataJson, function(music_data) {
-								var listT = document.getElementById('list_view_dataT');
-								var templateContent = listT.innerText;
-								var dom = doT.template(templateContent)(music_data.music_list_GJ);
-								document.getElementById('list_view_data').innerHTML = dom;
-							});
-							break;
-					}
-					document.getElementById('list_view_data').addEventListener('click',function (e) {
-						var e = e.target;
-						document.getElementById('musicPlay').innerHTML = '<audio src="'+e.id+'" autoplay="autoplay" loop = "loop"></audio>';
-					})
-				})
-			});
-		};
+	<!--movieListTemplate-->
+	<script id="movieListT" type="text/template">
+		<ul id="movieListBox">
+			{{ for(var i = it.length-1; i >= 0; i--){ }}
+			  	<li id="{{=it[i].id}}">
+			      	<img class="media-object" src="{{=it[i].images.small}}" alt="...">
+		     		<p>{{=it[i].title}}</p>
+			     	<p>{{=it[i].genres}}</p>
+		  		</li>
+		  	{{ } }}
+		</ul>
+	</script>
+	<!--musicNav&&movieNav-->
+	<script>
+		$('#navBand li').click(function () {//musicNav switch
+			$(this).addClass('active col-lg-3').siblings().removeClass('active col-lg-3');
+		});
+		$('#movieNav li').click(function () {//movie switch
+			$(this).addClass('active col-lg-3').siblings().removeClass('active col-lg-3');
+		});
+	</script>
+	<script type="text/javascript" src="js/music&movie.js"></script><!--music&movie js  not and index.js put together-->
+	<script>
 		
-		function movie_list_btn () {
-			$.get("json/movie_list_data.json", function(movie_list_data) {
-				var listT = document.getElementById('list_viewT');
-				var templateContent = listT.innerText;
-				var dom = doT.template(templateContent)(movie_list_data.movie_list);
-				document.getElementById('list_view').innerHTML = dom;
-			});
-		};
-		
-		function game_list_btn () {
-			$.get("json/game_list_data.json", function(game_list_data) {
-				var listT = document.getElementById('list_viewT');
-				var templateContent = listT.innerText;
-				var dom = doT.template(templateContent)(game_list_data.game_list);
-				document.getElementById('list_view').innerHTML = dom;
-			});
-		};
-		
-		function book_list_btn () {
-			$.get("json/book_list_data.json", function(book_list_data) {
-				var listT = document.getElementById('list_viewT');
-				var templateContent = listT.innerText;
-				var dom = doT.template(templateContent)(book_list_data.book_list);
-				document.getElementById('list_view').innerHTML = dom;
-				console.log(dom);
-			});
-		};
 	</script>
 </html>
