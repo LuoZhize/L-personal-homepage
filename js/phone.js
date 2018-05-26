@@ -1,3 +1,4 @@
+document.write();
 carouselJs();
 function carouselJs() {//autocarousel js
 	var autocarousel = document.getElementById('autocarousel');
